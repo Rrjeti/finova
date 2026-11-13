@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finova · Kontakt</title>
+<meta name="description" content="Finova: auditim, kontabilitet dhe këshillim financiar. Saktësi me qasje njerëzore.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff}
+a{color:inherit;text-decoration:none}a:hover{color:inherit;opacity:.85}
+@keyframes fnUp{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+@keyframes fnPop{from{opacity:0;scale:.9}to{opacity:1;scale:1}}
+@keyframes fnDrift{0%{translate:0 0}100%{translate:-70px 50px}}
+@keyframes fnUnder{from{background-size:0% 5px}to{background-size:100% 5px}}
+@keyframes fnPing{0%{box-shadow:0 0 0 0 rgba(39,227,154,.65)}100%{box-shadow:0 0 0 12px rgba(39,227,154,0)}}
+@keyframes fnBar{from{width:0}to{width:100%}}
+.fn-up{animation:fnUp .9s cubic-bezier(.2,.7,.2,1) both}
+.fn-pop{animation:fnPop 1.1s cubic-bezier(.2,.7,.2,1) both}
+.fn-d1{animation-delay:.05s}.fn-d2{animation-delay:.18s}.fn-d3{animation-delay:.32s}.fn-d4{animation-delay:.46s}.fn-d5{animation-delay:.6s}
+.fn-under{background:linear-gradient(#27E39A,#27E39A) left 92%/0% 5px no-repeat;animation:fnUnder 1s 1s ease-out forwards}
+.fn-ping{animation:fnPing 1.8s ease-out infinite}
+.fn-bar{animation:fnBar 2.2s .9s cubic-bezier(.2,.7,.2,1) both}
+.fn-btn{transition:transform .25s ease,box-shadow .25s ease}.fn-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(39,227,154,.35)}
+.fn-lift{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}.fn-lift:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(11,30,98,.16)}
+.fn-zoom img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.fn-zoom:hover img{transform:scale(1.06)}
+@supports (animation-timeline: view()){.fn-reveal{animation:fnUp linear both;animation-timeline:view();animation-range:entry 0% cover 28%}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,0.55)}
+@keyframes fnPulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(2.4);opacity:0}}
+</style>
+<style>@media (max-width:640px){h1{font-size:44px!important}h2{font-size:32px!important}header nav{order:3;width:100%;justify-content:center}}</style>
+</head>
+<body>
+<div style="font-family: 'Poppins', system-ui, sans-serif; color: #0B1E62; background: #ffffff; min-width: 0">
+
+<!-- ============ HERO + FORM ============ -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(180deg, #0B1E62 0%, #0B1E62 calc(100% - 300px), #1c3583 calc(100% - 200px), #6f80b8 calc(100% - 110px), #dfe4f3 calc(100% - 40px), #ffffff 100%); color: #ffffff; padding-bottom: 260px">
+  <div aria-hidden="true" style="position: absolute; width: 760px; height: 760px; right: -160px; top: 80px; border-radius: 50%; background: radial-gradient(circle, rgba(39,227,154,0.24) 0%, rgba(39,227,154,0) 65%)"></div>
+
+  <header style="position: relative; max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+    <a href="index.html" aria-label="Finova, ballina" style="display: flex">
+      <svg role="img" aria-label="finova" viewBox="398 370 1206 352" style="height: 32px; width: 110px"><g fill="#ffffff" fill-rule="evenodd"><path d="M430,712 L430,520 L402,520 L402,460 L430,460 A90,85 0 0 1 520,375 L555,375 L555,442 L520,442 A23,18 0 0 0 497,460 L555,460 L555,520 L497,520 L497,712 Z"></path><path d="M570,548 L638,518 L638,712 L570,712 Z"></path><path d="M654,712 L654,460 L770,460 A108,108 0 0 1 878,568 L878,712 L810,712 L810,572 A44,44 0 0 0 722,572 L722,712 Z"></path><path d="M890,586 a133,133 0 1 0 266,0 a133,133 0 1 0 -266,0 Z M962,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path><path d="M1132,460 L1202,460 L1249,595 L1297,460 L1367,460 L1282,712 L1215,712 Z"></path><path d="M1531,460 L1600,460 L1600,712 L1531,712 L1531,701 A130,130 0 1 1 1531,471 Z M1409,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path></g><path fill="#27E39A" d="M570,460 L638,460 L638,494 L570,524 Z"></path></svg>
+    </a>
+    <nav aria-label="Kryesore" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18)">
+      <a href="index.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Ballina</a>
+      <a href="sherbimet.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Shërbimet</a>
+      <a href="index.html#rreth" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Rreth nesh</a>
+      <a href="kontakt.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; background: rgba(255,255,255,0.14)">Kontakt</a>
+    </nav>
+    <a href="tel:+38344123456" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #ffffff; color: #0B1E62; font-size: 14px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>Na telefononi</a>
+  </header>
+
+  <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 40px 32px 0; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 26px; padding-top: 20px">
+      <span style="font-size: 13px; color: rgba(255,255,255,0.65)"><a href="index.html">Ballina</a> / <span style="color: #27E39A">Kontakt</span></span>
+      <h1 class="fn-up fn-d2" style="margin: 0; font-size: 64px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em">Le të flasim<br>për <span style="color: #27E39A">numrat.</span></h1>
+      <p class="fn-up fn-d3" style="margin: 0; max-width: 460px; font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.78)">Takimi i parë është falas. Na shkruani dhe ju kthejmë përgjigje brenda 24 orëve të punës.</p>
+      <div class="fn-up fn-d4" style="display: flex; flex-direction: column; gap: 12px; max-width: 460px">
+        
+          <a class="fn-lift" href="tel:+38344123456" style="display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px)">
+            <span style="width: 44px; height: 44px; flex: none; border-radius: 14px; background: rgba(39,227,154,0.16); color: #27E39A; display: flex; align-items: center; justify-content: center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>
+              
+              
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 12px; color: rgba(255,255,255,0.65)">Telefoni</span>
+              <span style="font-size: 16px; font-weight: 600">+383 44 123 456</span>
+            </span>
+          </a>
+        
+          <a class="fn-lift" href="mailto:info@finova-ks.com" style="display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px)">
+            <span style="width: 44px; height: 44px; flex: none; border-radius: 14px; background: rgba(39,227,154,0.16); color: #27E39A; display: flex; align-items: center; justify-content: center">
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>
+              
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 12px; color: rgba(255,255,255,0.65)">Email</span>
+              <span style="font-size: 16px; font-weight: 600">info@finova-ks.com</span>
+            </span>
+          </a>
+        
+          <a class="fn-lift" href="#" style="display: flex; align-items: center; gap: 16px; padding: 16px 18px; border-radius: 18px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px)">
+            <span style="width: 44px; height: 44px; flex: none; border-radius: 14px; background: rgba(39,227,154,0.16); color: #27E39A; display: flex; align-items: center; justify-content: center">
+              
+              
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 12px; color: rgba(255,255,255,0.65)">Adresa</span>
+              <span style="font-size: 16px; font-weight: 600">Rr. Agim Ramadani 15, Prishtinë</span>
+            </span>
+          </a>
+        
+      </div>
+      <div class="fn-up fn-d5" style="max-width: 460px; display: flex; align-items: center; gap: 16px; padding: 18px; border-radius: 22px; background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04)); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%); box-shadow: 0 20px 40px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.3)">
+        <div style="display: flex; flex: none">
+          <img src="images/av1.jpg" alt="" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid #27E39A">
+          <img src="images/av2.jpg" alt="" style="width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid #27E39A; margin-left: -14px">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 2px">
+          <span style="font-size: 15px; font-weight: 600">Flisni drejtpërdrejt me një ekspert</span>
+          <span style="font-size: 13px; color: rgba(255,255,255,0.72)">Arta Krasniqi · Driton Berisha, partnerë</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GLASS FORM -->
+    <div class="fn-pop fn-d3" style="flex: 1 1 520px; min-width: 0; padding: 36px; border-radius: 32px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(24px) saturate(150%); -webkit-backdrop-filter: blur(24px) saturate(150%); box-shadow: 0 40px 80px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.3); box-sizing: border-box">
+      <div data-if="sent" hidden>
+        <div style="min-height: 520px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; text-align: center">
+          <span style="width: 72px; height: 72px; border-radius: 50%; background: #27E39A; color: #0B1E62; display: flex; align-items: center; justify-content: center"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+          <h2 style="margin: 0; font-size: 30px; font-weight: 800">Faleminderit!</h2>
+          <p style="margin: 0; max-width: 340px; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.78)">Mesazhi u pranua. Një nga ekspertët tanë do t’ju kontaktojë së shpejti.</p>
+          <button type="button" data-action="reset" style="min-height: 44px; padding: 0 22px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.3); background: transparent; color: #ffffff; font: 600 14px 'Poppins', sans-serif; cursor: pointer">Dërgo një mesazh tjetër</button>
+        </div>
+      </div>
+      <div data-if="notSent">
+        <form style="display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <h2 style="margin: 0; font-size: 26px; font-weight: 800">Na dërgoni një mesazh</h2>
+            <span style="font-size: 14px; color: rgba(255,255,255,0.7)">Fushat me * janë të detyrueshme.</span>
+          </div>
+          <fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 10px">
+            <legend style="padding: 0; margin-bottom: 10px; font-size: 13px; font-weight: 600">Për çfarë keni nevojë?</legend>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              
+                <button type="button" data-topic="Auditim" aria-pressed="true" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font: 500 14px 'Poppins', sans-serif; cursor: pointer; border: 1px solid #27E39A; background: #27E39A; color: #0B1E62">Auditim</button>
+              
+                <button type="button" data-topic="Kontabilitet" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font: 500 14px 'Poppins', sans-serif; cursor: pointer; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff">Kontabilitet</button>
+              
+                <button type="button" data-topic="Tatime" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font: 500 14px 'Poppins', sans-serif; cursor: pointer; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff">Tatime</button>
+              
+                <button type="button" data-topic="Pagat" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font: 500 14px 'Poppins', sans-serif; cursor: pointer; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff">Pagat</button>
+              
+                <button type="button" data-topic="Tjetër" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; font: 500 14px 'Poppins', sans-serif; cursor: pointer; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff">Tjetër</button>
+              
+            </div>
+          </fieldset>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 600">Emri dhe mbiemri *
+              <input type="text" placeholder="Emri Mbiemri" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font: 400 15px 'Poppins', sans-serif; box-sizing: border-box; width: 100%">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 600">Kompania
+              <input type="text" placeholder="Emri i biznesit" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font: 400 15px 'Poppins', sans-serif; box-sizing: border-box; width: 100%">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 600">Email *
+              <input type="email" placeholder="ju@kompania.com" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font: 400 15px 'Poppins', sans-serif; box-sizing: border-box; width: 100%">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 600">Telefoni
+              <input type="tel" placeholder="+383" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font: 400 15px 'Poppins', sans-serif; box-sizing: border-box; width: 100%">
+            </label>
+          </div>
+          <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; font-weight: 600">Mesazhi *
+            <textarea rows="4" placeholder="Na tregoni shkurt për biznesin tuaj dhe çfarë ju duhet." style="padding: 14px 16px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.06); color: #ffffff; font: 400 15px 'Poppins', sans-serif; resize: vertical; box-sizing: border-box; width: 100%"></textarea>
+          </label>
+          <div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between">
+            <span style="font-size: 12px; color: rgba(255,255,255,0.65); max-width: 280px">Të dhënat tuaja trajtohen me konfidencialitet të plotë.</span>
+            <button type="button" data-action="send" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border: 0; border-radius: 999px; background: #27E39A; color: #0B1E62; font: 600 15px 'Poppins', sans-serif; cursor: pointer">Dërgo mesazhin <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP + HOURS ============ -->
+<section style="max-width: 1240px; margin: 0 auto; padding: 100px 32px; display: flex; flex-wrap: wrap; gap: 24px">
+  <div class="fn-reveal" style="position: relative; flex: 2 1 560px; min-width: 0; min-height: 420px; border-radius: 28px; overflow: hidden; background: #eef1f9">
+    <svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0">
+      <defs><pattern id="mapGrid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0v64" fill="none" stroke="#dfe4f3" stroke-width="2"></path></pattern></defs>
+      <rect width="100%" height="100%" fill="url(#mapGrid)"></rect>
+      <path d="M-20 300 C 200 240, 380 360, 620 250 S 980 160, 1200 220" fill="none" stroke="#ffffff" stroke-width="22"></path>
+      <path d="M380 -20 C 420 140, 360 260, 440 460" fill="none" stroke="#ffffff" stroke-width="16"></path>
+    </svg>
+    <div style="position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center">
+      <span aria-hidden="true" style="position: absolute; width: 48px; height: 48px; border-radius: 50%; background: rgba(39,227,154,0.5); animation: fnPulse 2s ease-out infinite"></span>
+      <span style="position: relative; width: 52px; height: 52px; border-radius: 16px; background: #0B1E62; display: flex; align-items: center; justify-content: center; box-shadow: 0 12px 30px rgba(11,30,98,0.35)"><svg aria-hidden="true" viewBox="0 0 68 252" style="width: 12px; height: 32px"><path d="M0 0h68v34L0 64z" fill="#27E39A"></path><path d="M0 88l68-30v194H0z" fill="#ffffff"></path></svg></span>
+    </div>
+    <span style="position: absolute; top: 18px; left: 18px; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; color: #4a5a94">HARTA · Google Maps embed</span>
+    <div style="position: absolute; left: 20px; bottom: 20px; right: 20px; max-width: 360px; padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.72); border: 1px solid rgba(255,255,255,0.9); backdrop-filter: blur(18px) saturate(160%); -webkit-backdrop-filter: blur(18px) saturate(160%); box-shadow: 0 20px 50px rgba(11,30,98,0.18); display: flex; flex-direction: column; gap: 4px">
+      <span style="font-size: 16px; font-weight: 600">Zyra Finova</span>
+      <span style="font-size: 14px; color: #3d4a7a">Rr. Agim Ramadani 15 · Prishtinë 10000</span>
+      <a href="#" style="margin-top: 6px; font-size: 13px; font-weight: 600; text-decoration: underline">Merr udhëzimet</a>
+    </div>
+  </div>
+  <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+    <div class="fn-reveal fn-lift" style="flex: 1; padding: 28px; border-radius: 28px; border: 1px solid #e3e7f3; display: flex; flex-direction: column; gap: 18px">
+      <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B1E62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Orari i punës</span>
+      <div style="display: flex; justify-content: space-between; font-size: 14px; padding-bottom: 12px; border-bottom: 1px solid #e3e7f3"><span>E hënë – E premte</span><span style="font-weight: 600">08:00 – 16:30</span></div>
+      <div style="display: flex; justify-content: space-between; font-size: 14px; padding-bottom: 12px; border-bottom: 1px solid #e3e7f3"><span>E shtunë</span><span style="font-weight: 600">09:00 – 13:00</span></div>
+      <div style="display: flex; justify-content: space-between; font-size: 14px"><span>E diel</span><span style="font-weight: 600">Mbyllur</span></div>
+    </div>
+    <div style="position: relative; overflow: hidden; padding: 28px; border-radius: 28px; background: #0B1E62; color: #ffffff; display: flex; flex-direction: column; gap: 12px">
+      <span style="font-size: 18px; font-weight: 600">Afatet tatimore po afrohen?</span>
+      <span style="font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.75)">Mos prisni deri në ditën e fundit. Rezervoni një takim sot.</span>
+      <a href="tel:+38344123456" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; margin-top: 4px; border-radius: 999px; background: #27E39A; color: #0B1E62; font-size: 14px; font-weight: 600">+383 44 123 456</a>
+      <svg aria-hidden="true" viewBox="0 0 68 252" style="position: absolute; right: 24px; bottom: -40px; width: 54px; height: 200px; opacity: 0.25"><path d="M0 0h68v34L0 64z" fill="#27E39A"></path><path d="M0 88l68-30v194H0z" fill="#ffffff"></path></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer style="position: relative; overflow: hidden; background: #0B1E62; color: #ffffff">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 40px 32px 110px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; color: rgba(255,255,255,0.65)">
+    <svg role="img" aria-label="finova" viewBox="398 370 1206 352" style="height: 28px; width: 96px"><g fill="#ffffff" fill-rule="evenodd"><path d="M430,712 L430,520 L402,520 L402,460 L430,460 A90,85 0 0 1 520,375 L555,375 L555,442 L520,442 A23,18 0 0 0 497,460 L555,460 L555,520 L497,520 L497,712 Z"></path><path d="M570,548 L638,518 L638,712 L570,712 Z"></path><path d="M654,712 L654,460 L770,460 A108,108 0 0 1 878,568 L878,712 L810,712 L810,572 A44,44 0 0 0 722,572 L722,712 Z"></path><path d="M890,586 a133,133 0 1 0 266,0 a133,133 0 1 0 -266,0 Z M962,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path><path d="M1132,460 L1202,460 L1249,595 L1297,460 L1367,460 L1282,712 L1215,712 Z"></path><path d="M1531,460 L1600,460 L1600,712 L1531,712 L1531,701 A130,130 0 1 1 1531,471 Z M1409,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path></g><path fill="#27E39A" d="M570,460 L638,460 L638,494 L570,524 Z"></path></svg>
+    <span>© 2026 Finova. Të gjitha të drejtat e rezervuara.</span>
+  </div>
+  <svg aria-hidden="true" width="100%" height="84" style="position: absolute; left: 0; bottom: 0">
+    <defs><pattern id="chipsFootC" width="100" height="84" patternUnits="userSpaceOnUse"><path d="M8 6h34v13L8 32z" fill="#27E39A"></path><path d="M58 48h34v13L58 74z" fill="#27E39A"></path></pattern></defs>
+    <rect width="100%" height="84" fill="url(#chipsFootC)"></rect>
+  </svg>
+</footer>
+
+</div>
+<script>
+(function(){
+  var els=document.querySelectorAll('[data-count]');
+  if('IntersectionObserver' in window && els.length){
+    var fmt=function(n){return n>=1000?Math.floor(n/1000)+','+String(n%1000).padStart(3,'0'):String(n)};
+    els.forEach(function(e){e.textContent='0'});
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);var el=en.target,to=+el.dataset.count,t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1600);el.textContent=fmt(Math.round(to*(1-Math.pow(1-k,3))));if(k<1)requestAnimationFrame(st)})(t0)})},{threshold:.3});
+    els.forEach(function(e){io.observe(e)});
+  }
+  var pills=document.querySelectorAll('[data-topic]');
+  pills.forEach(function(b){b.addEventListener('click',function(){pills.forEach(function(o){var on=o===b;o.setAttribute('aria-pressed',on);o.style.background=on?'#27E39A':'rgba(255,255,255,0.06)';o.style.color=on?'#0B1E62':'#ffffff';o.style.borderColor=on?'#27E39A':'rgba(255,255,255,0.22)'})})});
+  var show=function(sent){document.querySelectorAll('[data-if=sent]').forEach(function(e){e.hidden=!sent});document.querySelectorAll('[data-if=notSent]').forEach(function(e){e.hidden=sent})};
+  document.querySelectorAll('[data-action=send]').forEach(function(b){b.addEventListener('click',function(){show(true)})});
+  document.querySelectorAll('[data-action=reset]').forEach(function(b){b.addEventListener('click',function(){show(false)})});
+})();
+</script>
+</body>
+</html>

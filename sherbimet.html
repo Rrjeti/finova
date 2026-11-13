@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finova · Shërbimet</title>
+<meta name="description" content="Finova: auditim, kontabilitet dhe këshillim financiar. Saktësi me qasje njerëzore.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff}
+a{color:inherit;text-decoration:none}a:hover{color:inherit;opacity:.85}
+@keyframes fnUp{from{opacity:0;translate:0 28px}to{opacity:1;translate:0 0}}
+@keyframes fnPop{from{opacity:0;scale:.9}to{opacity:1;scale:1}}
+@keyframes fnDrift{0%{translate:0 0}100%{translate:-70px 50px}}
+@keyframes fnUnder{from{background-size:0% 5px}to{background-size:100% 5px}}
+@keyframes fnPing{0%{box-shadow:0 0 0 0 rgba(39,227,154,.65)}100%{box-shadow:0 0 0 12px rgba(39,227,154,0)}}
+@keyframes fnBar{from{width:0}to{width:100%}}
+.fn-up{animation:fnUp .9s cubic-bezier(.2,.7,.2,1) both}
+.fn-pop{animation:fnPop 1.1s cubic-bezier(.2,.7,.2,1) both}
+.fn-d1{animation-delay:.05s}.fn-d2{animation-delay:.18s}.fn-d3{animation-delay:.32s}.fn-d4{animation-delay:.46s}.fn-d5{animation-delay:.6s}
+.fn-under{background:linear-gradient(#27E39A,#27E39A) left 92%/0% 5px no-repeat;animation:fnUnder 1s 1s ease-out forwards}
+.fn-ping{animation:fnPing 1.8s ease-out infinite}
+.fn-bar{animation:fnBar 2.2s .9s cubic-bezier(.2,.7,.2,1) both}
+.fn-btn{transition:transform .25s ease,box-shadow .25s ease}.fn-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(39,227,154,.35)}
+.fn-lift{transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s ease}.fn-lift:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(11,30,98,.16)}
+.fn-zoom img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.fn-zoom:hover img{transform:scale(1.06)}
+@supports (animation-timeline: view()){.fn-reveal{animation:fnUp linear both;animation-timeline:view();animation-range:entry 0% cover 28%}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+@keyframes fnTilt{0%{transform:rotateX(52deg) rotateZ(-30deg)}100%{transform:rotateX(46deg) rotateZ(-22deg)}}
+summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+</style>
+<style>@media (max-width:640px){h1{font-size:44px!important}h2{font-size:32px!important}header nav{order:3;width:100%;justify-content:center}}</style>
+</head>
+<body>
+<div style="font-family: 'Poppins', system-ui, sans-serif; color: #0B1E62; background: #ffffff; min-width: 0">
+
+<!-- ============ HERO ============ -->
+<section style="position: relative; overflow: hidden; background: linear-gradient(180deg, #0B1E62 0%, #0B1E62 calc(100% - 300px), #1c3583 calc(100% - 200px), #6f80b8 calc(100% - 110px), #dfe4f3 calc(100% - 40px), #ffffff 100%); color: #ffffff; padding-bottom: 200px">
+  <div aria-hidden="true" style="position: absolute; width: 680px; height: 680px; right: -100px; top: -60px; border-radius: 50%; background: radial-gradient(circle, rgba(39,227,154,0.2) 0%, rgba(39,227,154,0) 65%)"></div>
+
+  <header style="position: relative; max-width: 1240px; margin: 0 auto; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+    <a href="index.html" aria-label="Finova, ballina" style="display: flex">
+      <svg role="img" aria-label="finova" viewBox="398 370 1206 352" style="height: 32px; width: 110px"><g fill="#ffffff" fill-rule="evenodd"><path d="M430,712 L430,520 L402,520 L402,460 L430,460 A90,85 0 0 1 520,375 L555,375 L555,442 L520,442 A23,18 0 0 0 497,460 L555,460 L555,520 L497,520 L497,712 Z"></path><path d="M570,548 L638,518 L638,712 L570,712 Z"></path><path d="M654,712 L654,460 L770,460 A108,108 0 0 1 878,568 L878,712 L810,712 L810,572 A44,44 0 0 0 722,572 L722,712 Z"></path><path d="M890,586 a133,133 0 1 0 266,0 a133,133 0 1 0 -266,0 Z M962,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path><path d="M1132,460 L1202,460 L1249,595 L1297,460 L1367,460 L1282,712 L1215,712 Z"></path><path d="M1531,460 L1600,460 L1600,712 L1531,712 L1531,701 A130,130 0 1 1 1531,471 Z M1409,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path></g><path fill="#27E39A" d="M570,460 L638,460 L638,494 L570,524 Z"></path></svg>
+    </a>
+    <nav aria-label="Kryesore" style="display: flex; flex-wrap: wrap; gap: 4px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18)">
+      <a href="index.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Ballina</a>
+      <a href="sherbimet.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; background: rgba(255,255,255,0.14)">Shërbimet</a>
+      <a href="index.html#rreth" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Rreth nesh</a>
+      <a href="kontakt.html" style="padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 500">Kontakt</a>
+    </nav>
+    <a href="kontakt.html" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; border-radius: 999px; background: #ffffff; color: #0B1E62; font-size: 14px; font-weight: 600">Na kontaktoni <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </header>
+
+  <div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 40px 32px 100px; display: flex; flex-wrap: wrap; align-items: center; gap: 40px">
+    <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+      <span style="font-size: 13px; color: rgba(255,255,255,0.65)"><a href="index.html">Ballina</a> / <span style="color: #27E39A">Shërbimet</span></span>
+      <h1 class="fn-up fn-d2" style="margin: 0; font-size: 64px; line-height: 1.05; font-weight: 800; letter-spacing: -0.03em">Çdo shërbim,<br>një <span style="color: #27E39A">standard.</span></h1>
+      <p class="fn-up fn-d3" style="margin: 0; max-width: 500px; font-size: 17px; line-height: 1.7; color: rgba(255,255,255,0.78)">Pesë fusha, një ekip. Zgjidhni atë që ju duhet sot, ne kujdesemi që të gjitha të flasin të njëjtën gjuhë.</p>
+      <div class="fn-up fn-d4" style="display: flex; flex-wrap: wrap; gap: 10px">
+        
+          <a href="#auditim" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14px; font-weight: 500">Auditim</a>
+        
+          <a href="#kontabilitet" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14px; font-weight: 500">Kontabilitet</a>
+        
+          <a href="#tatime" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14px; font-weight: 500">Këshillim tatimor</a>
+        
+          <a href="#pagat" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14px; font-weight: 500">Pagat</a>
+        
+          <a href="#keshillim" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); font-size: 14px; font-weight: 500">Këshillim financiar</a>
+        
+      </div>
+    </div>
+
+    <!-- 3D stacked glass ledger -->
+    <div class="fn-pop fn-d3" aria-hidden="true" style="position: relative; flex: 1 1 420px; min-width: 0; height: 460px; perspective: 1200px; display: flex; align-items: center; justify-content: center">
+      <div style="position: relative; width: 280px; height: 280px; transform-style: preserve-3d; animation: fnTilt 6s ease-in-out infinite alternate">
+        
+          <div style="position: absolute; inset: 0; border-radius: 28px; transform: translateZ(0px); background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.35); box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 10px 30px rgba(0,0,0,0.18); display: flex; align-items: flex-end; padding: 22px; box-sizing: border-box">
+            <span style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.8); letter-spacing: 0.08em">05 · KËSHILLIM</span>
+          </div>
+        
+          <div style="position: absolute; inset: 0; border-radius: 28px; transform: translateZ(34px); background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.35); box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 10px 30px rgba(0,0,0,0.18); display: flex; align-items: flex-end; padding: 22px; box-sizing: border-box">
+            <span style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); letter-spacing: 0.08em">04 · PAGAT</span>
+          </div>
+        
+          <div style="position: absolute; inset: 0; border-radius: 28px; transform: translateZ(68px); background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.35); box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 10px 30px rgba(0,0,0,0.18); display: flex; align-items: flex-end; padding: 22px; box-sizing: border-box">
+            <span style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9); letter-spacing: 0.08em">03 · TATIME</span>
+          </div>
+        
+          <div style="position: absolute; inset: 0; border-radius: 28px; transform: translateZ(102px); background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 10px 30px rgba(0,0,0,0.18); display: flex; align-items: flex-end; padding: 22px; box-sizing: border-box">
+            <span style="font-size: 13px; font-weight: 600; color: #ffffff; letter-spacing: 0.08em">02 · KONTABILITET</span>
+          </div>
+        
+          <div style="position: absolute; inset: 0; border-radius: 28px; transform: translateZ(136px); background: linear-gradient(135deg, rgba(122,245,198,0.95), rgba(39,227,154,0.85)); border: 1px solid rgba(255,255,255,0.35); box-shadow: inset 0 1px 0 rgba(255,255,255,0.4), 0 10px 30px rgba(0,0,0,0.18); display: flex; align-items: flex-end; padding: 22px; box-sizing: border-box">
+            <span style="font-size: 13px; font-weight: 600; color: #0B1E62; letter-spacing: 0.08em">01 · AUDITIM</span>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE BLOCKS ============ -->
+<section style="max-width: 1240px; margin: 0 auto; padding: 100px 32px 40px; display: flex; flex-direction: column; gap: 32px">
+  
+    <article class="fn-reveal fn-zoom" id="auditim" style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 40px; align-items: stretch; padding: 24px; border-radius: 32px; border: 1px solid #e3e7f3; background: #ffffff">
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; min-height: 380px; border-radius: 24px; overflow: hidden; background: #dfe4f3; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px">
+        <img src="images/audit.jpg" alt="Shqyrtim i dokumenteve të auditimit" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%">
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,98,0) 50%, rgba(11,30,98,0.4) 100%)"></div>
+        <div style="position: relative; align-self: flex-start; padding: 14px 18px; border-radius: 16px; background: rgba(11,30,98,0.55); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; align-items: center; gap: 12px">
+          <span style="font-size: 30px; font-weight: 800; color: #27E39A; line-height: 1">01</span>
+          <span style="font-size: 13px; line-height: 1.4; max-width: 180px">Opinion i pavarur mbi pasqyrat tuaja</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; padding: 16px 12px; display: flex; flex-direction: column; gap: 18px; justify-content: center">
+        <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">SHËRBIMI 01</span>
+        <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Auditim</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3d4a7a">Auditim statutor dhe vullnetar i pasqyrave financiare. Afër klientit, por gjithmonë të pavarur: kjo është mënyra si ndërtojmë besimin te bankat, investitorët dhe institucionet.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Auditim statutor</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Auditim i brendshëm</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Rishikim i pasqyrave</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Procedura të dakorduara</li>
+          
+        </ul>
+        <a href="kontakt.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; margin-top: 6px; border-radius: 999px; background: #0B1E62; color: #ffffff; font-size: 14px; font-weight: 600">Kërko ofertë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#27E39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </article>
+  
+    <article class="fn-reveal fn-zoom" id="kontabilitet" style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 40px; align-items: stretch; padding: 24px; border-radius: 32px; border: 1px solid #e3e7f3; background: #ffffff">
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; min-height: 380px; border-radius: 24px; overflow: hidden; background: #dfe4f3; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px">
+        <img src="images/accountant.jpg" alt="Kontabiliste duke shqyrtuar pasqyrat financiare" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 35%">
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,98,0) 50%, rgba(11,30,98,0.4) 100%)"></div>
+        <div style="position: relative; align-self: flex-start; padding: 14px 18px; border-radius: 16px; background: rgba(11,30,98,0.55); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; align-items: center; gap: 12px">
+          <span style="font-size: 30px; font-weight: 800; color: #27E39A; line-height: 1">02</span>
+          <span style="font-size: 13px; line-height: 1.4; max-width: 180px">Libra të rregullt, çdo muaj</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; padding: 16px 12px; display: flex; flex-direction: column; gap: 18px; justify-content: center">
+        <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">SHËRBIMI 02</span>
+        <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Kontabilitet</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3d4a7a">Mbajtja e librave, regjistrimi i transaksioneve dhe pasqyra mujore që i kuptoni pa qenë kontabilist.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Mbajtja e librave</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Pasqyra mujore</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Pasqyrat vjetore</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Raporte për menaxhmentin</li>
+          
+        </ul>
+        <a href="kontakt.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; margin-top: 6px; border-radius: 999px; background: #0B1E62; color: #ffffff; font-size: 14px; font-weight: 600">Kërko ofertë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#27E39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </article>
+  
+    <article class="fn-reveal fn-zoom" id="tatime" style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 40px; align-items: stretch; padding: 24px; border-radius: 32px; border: 1px solid #e3e7f3; background: #ffffff">
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; min-height: 380px; border-radius: 24px; overflow: hidden; background: #dfe4f3; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px">
+        <img src="images/tax.jpg" alt="Konsulent dhe klient duke nënshkruar dokumente" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%">
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,98,0) 50%, rgba(11,30,98,0.4) 100%)"></div>
+        <div style="position: relative; align-self: flex-start; padding: 14px 18px; border-radius: 16px; background: rgba(11,30,98,0.55); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; align-items: center; gap: 12px">
+          <span style="font-size: 30px; font-weight: 800; color: #27E39A; line-height: 1">03</span>
+          <span style="font-size: 13px; line-height: 1.4; max-width: 180px">Deklarime në kohë, pa surpriza</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; padding: 16px 12px; display: flex; flex-direction: column; gap: 18px; justify-content: center">
+        <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">SHËRBIMI 03</span>
+        <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Këshillim tatimor</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3d4a7a">Planifikim tatimor, deklarime periodike dhe përfaqësim para administratës tatimore.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>TVSH dhe tatimi në fitim</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Planifikim tatimor</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Përfaqësim në ATK</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Çmimet e transferimit</li>
+          
+        </ul>
+        <a href="kontakt.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; margin-top: 6px; border-radius: 999px; background: #0B1E62; color: #ffffff; font-size: 14px; font-weight: 600">Kërko ofertë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#27E39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </article>
+  
+    <article class="fn-reveal fn-zoom" id="pagat" style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 40px; align-items: stretch; padding: 24px; border-radius: 32px; border: 1px solid #e3e7f3; background: #ffffff">
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; min-height: 380px; border-radius: 24px; overflow: hidden; background: #dfe4f3; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px">
+        <img src="images/payroll.jpg" alt="Shqyrtim i fletëpagesave pranë laptopit" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%">
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,98,0) 50%, rgba(11,30,98,0.4) 100%)"></div>
+        <div style="position: relative; align-self: flex-start; padding: 14px 18px; border-radius: 16px; background: rgba(11,30,98,0.55); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; align-items: center; gap: 12px">
+          <span style="font-size: 30px; font-weight: 800; color: #27E39A; line-height: 1">04</span>
+          <span style="font-size: 13px; line-height: 1.4; max-width: 180px">Paga të sakta, çdo herë</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; padding: 16px 12px; display: flex; flex-direction: column; gap: 18px; justify-content: center">
+        <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">SHËRBIMI 04</span>
+        <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Pagat</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3d4a7a">Llogaritja e pagave, kontributet dhe raportimi mujor për stafin tuaj, me konfidencialitet të plotë.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Llogaritja e pagave</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Kontributet pensionale</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Raportimi mujor</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Kontratat e punës</li>
+          
+        </ul>
+        <a href="kontakt.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; margin-top: 6px; border-radius: 999px; background: #0B1E62; color: #ffffff; font-size: 14px; font-weight: 600">Kërko ofertë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#27E39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </article>
+  
+    <article class="fn-reveal fn-zoom" id="keshillim" style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 40px; align-items: stretch; padding: 24px; border-radius: 32px; border: 1px solid #e3e7f3; background: #ffffff">
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; min-height: 380px; border-radius: 24px; overflow: hidden; background: #dfe4f3; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px">
+        <img src="images/advice.jpg" alt="Analizë e grafikëve financiarë në takim" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%">
+        <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,30,98,0) 50%, rgba(11,30,98,0.4) 100%)"></div>
+        <div style="position: relative; align-self: flex-start; padding: 14px 18px; border-radius: 16px; background: rgba(11,30,98,0.55); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); display: flex; align-items: center; gap: 12px">
+          <span style="font-size: 30px; font-weight: 800; color: #27E39A; line-height: 1">05</span>
+          <span style="font-size: 13px; line-height: 1.4; max-width: 180px">Vendime të bazuara në numra</span>
+        </div>
+      </div>
+      <div style="flex: 1 1 420px; min-width: 0; padding: 16px 12px; display: flex; flex-direction: column; gap: 18px; justify-content: center">
+        <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">SHËRBIMI 05</span>
+        <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Këshillim financiar</h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3d4a7a">Buxhetim, analiza e rrjedhës së parasë dhe mbështetje për investime e financime.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Buxhetim dhe parashikim</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Analiza e cash-flow</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Vlerësim biznesi</li>
+          
+            <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="width: 24px; height: 24px; flex: none; border-radius: 50%; background: #0B1E62; color: #27E39A; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>Due diligence</li>
+          
+        </ul>
+        <a href="kontakt.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 22px; margin-top: 6px; border-radius: 999px; background: #0B1E62; color: #ffffff; font-size: 14px; font-weight: 600">Kërko ofertë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#27E39A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+      </div>
+    </article>
+  
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section style="max-width: 1240px; margin: 0 auto; padding: 80px 32px">
+  <div style="position: relative; overflow: hidden; border-radius: 32px; background: linear-gradient(160deg, #13297a, #0B1E62); color: #ffffff; padding: 56px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+    <div aria-hidden="true" style="position: absolute; left: -120px; bottom: -160px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(39,227,154,0.22) 0%, rgba(39,227,154,0) 65%)"></div>
+    <div style="position: relative; flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.16em; color: #27E39A">PËR KË PUNOJMË</span>
+      <h2 class="fn-reveal" style="margin: 0; font-size: 38px; line-height: 1.15; font-weight: 800">Biznese të çdo madhësie, në çdo fazë</h2>
+    </div>
+    <div style="position: relative; flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px">
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>Tregti dhe shitje
+        </div>
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>Prodhim
+        </div>
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>Ndërtim
+        </div>
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>Shërbime profesionale
+        </div>
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>OJQ dhe projekte
+        </div>
+      
+        <div class="fn-reveal fn-lift" style="padding: 18px 20px; border-radius: 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2); display: flex; align-items: center; gap: 12px; font-size: 15px; font-weight: 500">
+          <svg aria-hidden="true" viewBox="0 0 68 34" style="width: 22px; height: 11px; flex: none"><path d="M0 0h68v12L0 34z" fill="#27E39A"></path></svg>Startup-e
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section style="max-width: 920px; margin: 0 auto; padding: 40px 32px 100px; display: flex; flex-direction: column; gap: 32px">
+  <div style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+    <span style="padding: 6px 14px; border-radius: 999px; background: #e9fbf3; font-size: 12px; font-weight: 600; letter-spacing: 0.12em">PYETJE TË SHPESHTA</span>
+    <h2 class="fn-reveal" style="margin: 0; font-size: 40px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em">Pyetje që na bëhen shpesh</h2>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 12px">
+    
+      <details class="fn-reveal" style="border: 1px solid #e3e7f3; border-radius: 20px; padding: 0 24px; background: #ffffff">
+        <summary style="min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 17px; font-weight: 600">Sa kushton një auditim?<span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #e9fbf3; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.7; color: #3d4a7a">Çmimi varet nga madhësia e biznesit, numri i transaksioneve dhe kompleksiteti i pasqyrave. Pas takimit të parë falas, ju dërgojmë një ofertë fikse brenda 48 orëve.</p>
+      </details>
+    
+      <details class="fn-reveal" style="border: 1px solid #e3e7f3; border-radius: 20px; padding: 0 24px; background: #ffffff">
+        <summary style="min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 17px; font-weight: 600">Sa zgjat procesi i auditimit?<span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #e9fbf3; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.7; color: #3d4a7a">Për shumicën e bizneseve, nga takimi i parë deri te raporti përfundimtar kalojnë 3 deri në 6 javë.</p>
+      </details>
+    
+      <details class="fn-reveal" style="border: 1px solid #e3e7f3; border-radius: 20px; padding: 0 24px; background: #ffffff">
+        <summary style="min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 17px; font-weight: 600">A mund të punoni me sistemin tonë kontabël?<span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #e9fbf3; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.7; color: #3d4a7a">Po. Punojmë me shumicën e programeve kontabël që përdoren në Kosovë, si dhe me Excel. Nëse keni sistem tjetër, e përshtatemi.</p>
+      </details>
+    
+      <details class="fn-reveal" style="border: 1px solid #e3e7f3; border-radius: 20px; padding: 0 24px; background: #ffffff">
+        <summary style="min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 17px; font-weight: 600">A ofroni shërbime për biznese të vogla?<span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #e9fbf3; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p style="margin: 0 0 22px; font-size: 15px; line-height: 1.7; color: #3d4a7a">Sigurisht. Kemi paketa mujore për biznese të vogla dhe startup-e, që përfshijnë kontabilitetin, pagat dhe deklarimet tatimore.</p>
+      </details>
+    
+  </div>
+</section>
+
+<!-- ============ CTA + FOOTER ============ -->
+<footer style="position: relative; overflow: hidden; background: #0B1E62; color: #ffffff">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 80px 32px 56px; display: flex; flex-wrap: wrap; gap: 28px; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.12)">
+    <h2 class="fn-reveal" style="margin: 0; flex: 1 1 480px; font-size: 42px; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em">Nuk jeni të sigurt cili shërbim ju duhet?</h2>
+    <a class="fn-btn" href="kontakt.html" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; background: #27E39A; color: #0B1E62; font-size: 15px; font-weight: 600">Bisedoni me një ekspert <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+  </div>
+  <div style="max-width: 1240px; margin: 0 auto; padding: 28px 32px 110px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; color: rgba(255,255,255,0.65)">
+    <svg role="img" aria-label="finova" viewBox="398 370 1206 352" style="height: 28px; width: 96px"><g fill="#ffffff" fill-rule="evenodd"><path d="M430,712 L430,520 L402,520 L402,460 L430,460 A90,85 0 0 1 520,375 L555,375 L555,442 L520,442 A23,18 0 0 0 497,460 L555,460 L555,520 L497,520 L497,712 Z"></path><path d="M570,548 L638,518 L638,712 L570,712 Z"></path><path d="M654,712 L654,460 L770,460 A108,108 0 0 1 878,568 L878,712 L810,712 L810,572 A44,44 0 0 0 722,572 L722,712 Z"></path><path d="M890,586 a133,133 0 1 0 266,0 a133,133 0 1 0 -266,0 Z M962,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path><path d="M1132,460 L1202,460 L1249,595 L1297,460 L1367,460 L1282,712 L1215,712 Z"></path><path d="M1531,460 L1600,460 L1600,712 L1531,712 L1531,701 A130,130 0 1 1 1531,471 Z M1409,586 a61,61 0 1 0 122,0 a61,61 0 1 0 -122,0 Z"></path></g><path fill="#27E39A" d="M570,460 L638,460 L638,494 L570,524 Z"></path></svg>
+    <span>© 2026 Finova · Rr. Agim Ramadani 15, Prishtinë · info@finova-ks.com</span>
+  </div>
+  <svg aria-hidden="true" width="100%" height="84" style="position: absolute; left: 0; bottom: 0">
+    <defs><pattern id="chipsFootS" width="100" height="84" patternUnits="userSpaceOnUse"><path d="M8 6h34v13L8 32z" fill="#27E39A"></path><path d="M58 48h34v13L58 74z" fill="#27E39A"></path></pattern></defs>
+    <rect width="100%" height="84" fill="url(#chipsFootS)"></rect>
+  </svg>
+</footer>
+
+</div>
+<script>
+(function(){
+  var els=document.querySelectorAll('[data-count]');
+  if('IntersectionObserver' in window && els.length){
+    var fmt=function(n){return n>=1000?Math.floor(n/1000)+','+String(n%1000).padStart(3,'0'):String(n)};
+    els.forEach(function(e){e.textContent='0'});
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(!en.isIntersecting)return;io.unobserve(en.target);var el=en.target,to=+el.dataset.count,t0=performance.now();(function st(t){var k=Math.min(1,(t-t0)/1600);el.textContent=fmt(Math.round(to*(1-Math.pow(1-k,3))));if(k<1)requestAnimationFrame(st)})(t0)})},{threshold:.3});
+    els.forEach(function(e){io.observe(e)});
+  }
+  var pills=document.querySelectorAll('[data-topic]');
+  pills.forEach(function(b){b.addEventListener('click',function(){pills.forEach(function(o){var on=o===b;o.setAttribute('aria-pressed',on);o.style.background=on?'#27E39A':'rgba(255,255,255,0.06)';o.style.color=on?'#0B1E62':'#ffffff';o.style.borderColor=on?'#27E39A':'rgba(255,255,255,0.22)'})})});
+  var show=function(sent){document.querySelectorAll('[data-if=sent]').forEach(function(e){e.hidden=!sent});document.querySelectorAll('[data-if=notSent]').forEach(function(e){e.hidden=sent})};
+  document.querySelectorAll('[data-action=send]').forEach(function(b){b.addEventListener('click',function(){show(true)})});
+  document.querySelectorAll('[data-action=reset]').forEach(function(b){b.addEventListener('click',function(){show(false)})});
+})();
+</script>
+</body>
+</html>
