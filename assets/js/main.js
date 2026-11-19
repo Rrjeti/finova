@@ -70,15 +70,19 @@
   var header = $('.site-header'), bar = $('.progress'), toTop = $('.to-top'), mbar = $('.mbar');
   var parallax = $$('[data-parallax]');
   var tracks = $$('[data-progress]');
-  var lastY = w.scrollY, ticking = false;
+  var lastY = w.scrollY, upTravel = 0, ticking = false;
 
   function onScroll() {
     var y = w.scrollY, h = root.scrollHeight - w.innerHeight, vh = w.innerHeight;
     if (bar) bar.style.setProperty('--sp', h > 0 ? (y / h).toFixed(4) : 0);
     if (header) {
       header.classList.toggle('scrolled', y > 30);
-      header.classList.toggle('hide', y > 500 && y > lastY + 4 && !root.classList.contains('menu-open'));
-      if (y < lastY - 4) header.classList.remove('hide');
+      /* Hide only while scrolling down; show again only after a deliberate
+         upward scroll (>= 12px). Stopping never changes the state. */
+      var dy = y - lastY;
+      if (dy > 0) { upTravel = 0; if (y > 500 && !root.classList.contains('menu-open')) header.classList.add('hide'); }
+      else if (dy < 0) { upTravel -= dy; if (upTravel >= 12) header.classList.remove('hide'); }
+      if (y <= 120) header.classList.remove('hide');
     }
     if (toTop) toTop.classList.toggle('show', y > vh * 1.2);
     if (mbar) mbar.classList.toggle('show', y > vh * 0.6);

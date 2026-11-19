@@ -98,7 +98,6 @@ ul{margin:0;padding:0;list-style:none}
 .nav a{position:relative;padding:9px 18px;border-radius:999px;font-size:14px;font-weight:500;transition:background .3s}
 .nav a:hover{background:rgba(255,255,255,.1)}
 .nav a[aria-current=page]{background:rgba(255,255,255,.16);font-weight:600}
-.nav a[aria-current=page]::after{content:"";position:absolute;left:50%;bottom:3px;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:var(--green)}
 .header-cta{display:flex;align-items:center;gap:10px}
 .menu-btn{display:none;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;align-items:center;justify-content:center;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .menu-btn span{position:relative;width:18px;height:2px;background:currentColor;border-radius:2px;transition:background .3s}
